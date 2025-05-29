@@ -74,7 +74,7 @@ def generate_image(state: State) -> State:
     return {"prompt": prompt, "image_url": image_url}
 
 
-# 6. LangGGraph 생성
+# 6. LangGraph 생성
 workflow = StateGraph(State)
 workflow.add_node("refine_prompt", refine_prompt)
 workflow.add_node("translate_prompt", translate_prompt)
